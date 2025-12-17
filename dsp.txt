@@ -1,0 +1,5 @@
+hi=Hello
+how are you=I am fine,thankyou!
+what is python=python is a high level programming language
+good morning=good mrng
+what is data structure=a way to organise and store data
