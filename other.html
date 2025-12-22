@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>CITY PUBLIC TRANSPORT SYSTEM ROUTES</title>
+<link rel="stylesheet" href="style.css">
 <style>
     body {
         background:linear-gradient(to right,pink,rgb(137, 137, 177))
@@ -27,6 +28,12 @@
         width: 80%;
         border-collapse: collapse;
         margin-top: 20px;
+        font-family: verdana;
+        background-color: antiquewhite;
+    }
+    th,td{
+        border: 2px solid black;
+        text-align: center;
     }
     </style>
     
@@ -66,29 +73,29 @@
                 <li>Can be crowded during peak hours</li>
                 <li>Subject to traffic delays</li>
             </ul>
-            <table border="">
+            <table  cellpadding="5" cellspacing="5" border=" "style="width:80%;border:2px solid black;border-collapse:collapse; font-family:verdana;background-color:lightblue"> 
                 <caption><b>Bus Route Details of hyderabad</b></caption>
-                <th>bus no </th>
-                <th>start point</th>
-                <th>end point</th>
-                <th>major stops</th>
+                <th style="color:black";border:2px solid black;>bus no </th>
+                <th style=color:black;padding=8px">start point</th>
+                <th style="color:black">end point</th>
+                <th style="color:black">major stops</th>
 <tr>
-                <td>101</td>
-                <td>main station</td>
-                <td>central park</td>
-                <td>city mall, university</td>
+                <td style="text-align:center;font-size:16px">101</td>
+                <td  style="text-align:center;font-size=16px">main station</td>
+                <td style="text-align:center;font-size=16px">central park</td>
+                <td style="text-align:center;font-size=16px">city mall, university</td>
                 </tr>
                 <tr>
-                <td>202</td>
-                <td>airport</td>
-                <td>downtown</td>
-                <td>museum, shopping district</td>
+                <td style="text-align:center;font-size:16px">202</td>
+                <td style="text-align:center;font-size:16px">airport</td>
+                <td style="text-align:center;font-size:16px">downtown</td>
+                <td style="text-align:center;font-size:16px">museum, shopping district</td>
                 </tr>
                 <tr>
-                <td>303</td>
-                <td>suburbia</td>
-                <td>financial district</td>
-                <td>hospital, city hall</td>
+                <td style="text-align:center;font-size:16px">303</td>
+                <td style="text-align:center;font-size:16px" >suburbia</td>
+                <td style="text-align:center;font-size:16px">financial district</td>
+                <td style="text-align:center;font-size:16px">hospital, city hall</td>
                 </tr>
             </table>
 
@@ -110,7 +117,7 @@
                 <li>Limited coverage in some areas</li>
                 <li>Higher fares compared to buses</li>
             </ul>
-            <table border="">
+            <table border="" cellpadding="5" cellspacing="5">
                 <caption><b>Train Route Details of hyderabad</b></caption>
                 <th>train no </th>
                 <th>start point</th>
@@ -135,6 +142,66 @@
                 <td>zoo, botanical gardens</td>
                 </tr>
             </table>
+            <h1>How trains overcome the disadvantages of buses</h1>
+            <table border="" class="bus-train">
+                <tr>
+                    <th>BUS</th>
+                    <th>TRAIN</th>
+                    </tr>
+                    <tr>
+                        <td>buses get stuck in the road traffic</td>
+                        <td>trains run on seperate tracks</td>
+                        </tr>
+                        <tr>
+                            <td>slower for long distances</td>
+                            <td>faster for longer journeys</td>
+                        </tr>
+                        <tr>
+                            <td>consumes more fuel per passenger</td>
+                            <td>more fuel-efficient for more transport</td>
+                        </tr>
+                        <tr>
+                            <td>Higher accidental risk</td>
+                            <td>safer than bus journey</td>
+                            </tr>
+                            </table>
+
+                            <h2>Online ticket booking form</h2>
+                            <form action="submit_ticket" method="post">
+                                <label for="passenger name">Passenger name:</label><br>
+                                <input type="text" name="passenger name"><br><br>
+                                <label for="Address">Address:</label><br>
+                                <input type="text" name="Address"><br><br>
+                                <input type="radio" name="gender" value="Male">
+                                <label for="Male">Male:</label><br>
+                                <input type="radio" name="gender" value="Female">
+                                <label for="Female">Female:</label><br>
+                                <input type="radio" name="gender" value="Other">
+                                <label for="Other">Other:</label><br><br>
+                                <label for="Contact number">Contact number:</label><br>
+                                <input type="tel" name="Contact number"><br><br>
+                                <label for="Destination">Destination:</label><br>
+                                <input type="text" name="Destination"><br><br>
+                                <label for="Date of travel">Date of travel:</label><br>
+                                <input type="date" name="Date of travel"><br><br>
+                                <label for="Number of tickets">Number of tickets:</label><br>
+                                <input type="number" name="Number of tickets"><br><br>
+                                <label for ="Bus type">Bus type:</label><br>
+                                <select name="Bus type">
+                                    <option value="Regular">Regular</option>
+                                    <option value="Express">Express</option>
+                                    <option value="Luxury">Luxury</option>
+                                    <option value="Sleeper">Sleeper</option>
+                                    </select><br><br>
+                                    <label for="Payment method">Payment method:</label><br>
+                                    <select name="Payment method">
+                                        <option value="Credit Card">Credit Card</option>
+                                        <option value="Debit Card">Debit Card</option>
+                                        <option value="Net Banking">Net Banking</option>
+                                        <option value="UPI">UPI</option>
+                                        </select><br><br>
+                                        <input type="submit" value="submit">
+                                        </form>
             <h3>Travel Tips</h3>
             <ul>
                 <li>carry a valid ticket or pass</li>
@@ -161,7 +228,7 @@
         <source src="C:\Users\mummy\Downloads\WhatsApp Audio 2025-12-18 at 22.44.30_9343ba32.dat.unknown" type="audio/mpeg">
 </audio>
 <h3>Metro Network Map</h3>
-<iframe src="C:\Users\mummy\Downloads\hyderabad-metro-map-pdf-download.pdf" type="pdf" width="300" height="300"></iframe>
+<iframe src="C:\Users\mummy\Downloads\hyderabad-metro-map-pdf-download.pdf" type="pdf" width="500" height="500"></iframe>
 
 
 
