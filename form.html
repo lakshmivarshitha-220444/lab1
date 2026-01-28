@@ -6,44 +6,57 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body background=""C:\Users\mummy\Downloads\WhatsApp Image 2025-12-24 at 15.14.08_c6ee1b3e.jpg"">
+<body background=gradient(to right, lightblue, lightgreen)>
     <center>
         <h2> Ticket Booking Form</h2>
-    <form action="submit_ticket" method="post" class="booking-form">
-                                <label for="passenger name">Passenger name:</label><br>
-                                <input type="text" name="passenger name"><br><br>
-                                <label for="Address">Address:</label><br>
-                                <input type="text" name="Address"><br><br>
-                                <input type="radio" name="gender" value="Male">
-                                <label for="Male">Male:</label><br>
-                                <input type="radio" name="gender" value="Female">
-                                <label for="Female">Female:</label><br>
-                                <input type="radio" name="gender" value="Other">
-                                <label for="Other">Other:</label><br><br>
-                                <label for="Contact number">Contact number:</label><br>
-                                <input type="tel" name="Contact number"><br><br>
-                                <label for="Destination">Destination:</label><br>
-                                <input type="text" name="Destination"><br><br>
-                                <label for="Date of travel">Date of travel:</label><br>
-                                <input type="date" name="Date of travel"><br><br>
-                                <label for="Number of tickets">Number of tickets:</label><br>
-                                <input type="number" name="Number of tickets"><br><br>
-                                <label for =" Type"> Type:</label><br>
-                                <select name=" Type">
-                                    <option value="Regular">Regular</option>
-                                    <option value="Express">Express</option>
-                                    <option value="Luxury">Luxury</option>
-                                    <option value="Sleeper">Sleeper</option>
-                                    </select><br><br>
-                                    <label for="Payment method">Payment method:</label><br>
-                                    <select name="Payment method">
-                                        <option value="Credit Card">Credit Card</option>
-                                        <option value="Debit Card">Debit Card</option>
-                                        <option value="Net Banking">Net Banking</option>
-                                        <option value="UPI">UPI</option>
-                                        </select><br><br>
-                                        <input type="submit" value="submit">
-                                        </form>
-                                        </center>
+
+<form action="form.php" method="post">
+
+<label>Passenger Name:</label><br>
+<input type="text" name="passenger_name" required><br><br>
+
+<label>Address:</label><br>
+<input type="text" name="address"><br><br>
+
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="Male"> Male<br>
+<input type="radio" name="gender" value="Female"> Female<br>
+<input type="radio" name="gender" value="Other"> Other<br><br>
+
+<label>Contact Number:</label><br>
+<input type="tel" name="contact_number"><br><br>
+
+<label>Destination:</label><br>
+<input type="text" name="destination"><br><br>
+
+<label>Date of Travel:</label><br>
+<input type="date" name="date_of_travel"><br><br>
+
+<label>Number of Tickets:</label><br>
+<input type="number" name="number_of_tickets"><br><br>
+
+<label>Type:</label><br>
+<select name="type">
+    <option value="Regular">Regular</option>
+    <option value="Express">Express</option>
+    <option value="Luxury">Luxury</option>
+    <option value="Sleeper">Sleeper</option>
+</select><br><br>
+
+<label>Payment Method:</label><br>
+<select name="payment_method">
+    <option value="Credit Card">Credit Card</option>
+    <option value="Debit Card">Debit Card</option>
+    <option value="Net Banking">Net Banking</option>
+    <option value="UPI">UPI</option>
+</select><br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+</center>
+</body>
+</html>
+</center>
 </body>
 </html>
