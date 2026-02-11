@@ -3,60 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Ticket Booking Form</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, lightblue, lightgreen);
+            font-family: Arial, sans-serif;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+    </style>
 </head>
-<body background=gradient(to right, lightblue, lightgreen)>
-    <center>
-        <h2> Ticket Booking Form</h2>
 
-<form action="form.php" method="post">
+<body>
+<center>
+    <h2>Ticket Booking Form</h2>
 
-<label>Passenger Name:</label><br>
-<input type="text" name="passenger_name" required><br><br>
+    <form action="form.php" method="POST" enctype="multipart/form-data">
 
-<label>Address:</label><br>
-<input type="text" name="address"><br><br>
+        <label>Passenger Name:</label><br>
+        <input type="text" name="passenger_name" required><br><br>
 
-<label>Gender:</label><br>
-<input type="radio" name="gender" value="Male"> Male<br>
-<input type="radio" name="gender" value="Female"> Female<br>
-<input type="radio" name="gender" value="Other"> Other<br><br>
+        <label>Address:</label><br>
+        <input type="text" name="address"><br><br>
 
-<label>Contact Number:</label><br>
-<input type="tel" name="contact_number"><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
 
-<label>Destination:</label><br>
-<input type="text" name="destination"><br><br>
+        <label>Contact Number:</label><br>
+        <input type="tel" name="contact_number"><br><br>
 
-<label>Date of Travel:</label><br>
-<input type="date" name="date_of_travel"><br><br>
+        <label>Destination:</label><br>
+        <input type="text" name="destination"><br><br>
 
-<label>Number of Tickets:</label><br>
-<input type="number" name="number_of_tickets"><br><br>
+        <label>Date of Travel:</label><br>
+        <input type="date" name="date_of_travel"><br><br>
 
-<label>Type:</label><br>
-<select name="type">
-    <option value="Regular">Regular</option>
-    <option value="Express">Express</option>
-    <option value="Luxury">Luxury</option>
-    <option value="Sleeper">Sleeper</option>
-</select><br><br>
+        <label>Number of Tickets:</label><br>
+        <input type="number" name="number_of_tickets"><br><br>
 
-<label>Payment Method:</label><br>
-<select name="payment_method">
-    <option value="Credit Card">Credit Card</option>
-    <option value="Debit Card">Debit Card</option>
-    <option value="Net Banking">Net Banking</option>
-    <option value="UPI">UPI</option>
-</select><br><br>
+        <label>Type:</label><br>
+        <select name="type">
+            <option value="Regular">Regular</option>
+            <option value="Express">Express</option>
+            <option value="Luxury">Luxury</option>
+            <option value="Sleeper">Sleeper</option>
+        </select><br><br>
 
-<input type="submit" value="Submit">
+        <label>Payment Method:</label><br>
+        <select name="payment_method">
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Net Banking">Net Banking</option>
+            <option value="UPI">UPI</option>
+        </select><br><br>
 
-</form>
-</center>
-</body>
-</html>
+        
+        <label>Upload ID Proof (JPG, PNG, PDF only):</label><br>
+        <input type="file" name="upload_file" required><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
 </center>
 </body>
 </html>

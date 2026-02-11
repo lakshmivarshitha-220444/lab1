@@ -1,17 +1,17 @@
 <?php
-// connect to database
+
 $conn = mysqli_connect("localhost", "root", "", "testdb");
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// check request method
+
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     die("Invalid request method");
 }
 
-/* ===== Clean & Get Form Data ===== */
+
 
 $passenger_name = trim($_POST['passenger_name'] ?? '');
 $address        = trim($_POST['address'] ?? '');

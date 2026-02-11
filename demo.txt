@@ -1,0 +1,16 @@
+ISBN: 978-1-26-046342-2
+MHID: 1-26-046342-7
+The material in this eBook also appears in the print version of this title: ISBN: 978-1-26-046341-5,
+MHID: 1-26-046341-9.
+eBook conversion by codeMantra
+Version 1.0
+All trademarks are trademarks of their respective owners. Rather than put a trademark symbol after every occurrence of a 
+trademarked name, we use names in an editorial fashion only, and to the benefit of the trademark owner, with no intention of 
+infringement of the trademark. Where such designations appear in this book, they have been printed with initial caps.
+McGraw-Hill Education eBooks are available at special quantity discounts to use as premiums and sales promotions or for 
+use in corporate training programs. To contact a representative, please visit the Contact Us page at www.mhprofessional.com.
+Information has been obtained by McGraw Hill from sources believed to be reliable. However, because of the possibility of 
+human or mechanical error by our sources, McGraw Hill, or others, McGraw Hill does not guarantee the accuracy, adequacy, 
+or completeness of any information and is not responsible for any errors or omissions or the results obtained from the use of 
+such information.
+Oracle Corporation does not make any representations or warranties as to the accuracy, adequacy, or completeness of any information contained in this Work, and is not responsible for any errors or omissions.
