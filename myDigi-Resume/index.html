@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>My Digital Resume</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<i class="bi bi-person-circle"></i> MyResume
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#projects">Web Projects</a></li>
+<li><a class="dropdown-item" href="#projects">Python Projects</a></li>
+</ul>
+
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO SECTION -->
+
+<section id="home" class="container my-5">
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+
+<h1>Hello, I'm Varshitha</h1>
+
+<p class="lead">
+Web Developer | Python Programmer| Student
+</p>
+
+
+
+</div>
+
+<div class="col-md-6 text-center">
+
+<img src="images/profile.jpg" class="img-fluid rounded-circle profile-img">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="container my-5">
+
+<div class="alert alert-info text-center">
+<i class="bi bi-info-circle"></i> About Me
+</div>
+
+<p class="text-center">
+
+I am a Computer Science student passionate about
+Web Development, Python Programming, and Data Science.
+
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section class="container my-5">
+
+<h2 class="text-center mb-4">Skills</h2>
+
+<p>HTML</p>
+<div class="progress mb-3">
+<div class="progress-bar bg-success" style="width:90%">90%</div>
+</div>
+
+<p>Python</p>
+<div class="progress mb-3">
+<div class="progress-bar bg-warning" style="width:80%">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="progress mb-3">
+<div class="progress-bar bg-primary" style="width:75%">75%</div>
+</div>
+
+<div class="text-center mt-3">
+
+<span class="badge bg-primary">Bootstrap</span>
+<span class="badge bg-success">React</span>
+<span class="badge bg-danger">MySQL</span>
+
+</div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+<section id="projects" class="container my-5">
+
+<h2 class="text-center mb-4">Projects</h2>
+
+<div class="row g-4 justify-content-center">
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="images/project1.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Project 1</h5>
+
+<button class="btn btn-primary viewProject"
+data-bs-toggle="modal"
+data-bs-target="#projectModal">
+
+<button class="btn btn-primary viewProject" data-bs-toggle="modal" data-bs-target="#projectModal">
+View
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</section>
+
+<!-- MODAL -->
+
+<div class="modal fade" id="projectModal">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5 class="modal-title">Project Details</h5>
+
+<button class="btn-close" data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+This project demonstrates modern web development using Bootstrap.
+
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- EDUCATION -->
+
+<section class="container my-5">
+
+<h2 class="text-center mb-4">Education</h2>
+
+<div class="table-responsive">
+
+<table class="table table-striped table-bordered">
+
+<thead class="table-dark">
+
+<tr>
+<th>Year</th>
+<th>Course</th>
+<th>Institute</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>2022-2026</td>
+<td>B.Tech Computer Science</td>
+<td>XYZ Engineering College</td>
+</tr>
+
+<tr>
+<td>2020-2022</td>
+<td>Intermediate</td>
+<td>ABC Junior College</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="container my-5">
+
+<h2 class="text-center mb-4">Gallery</h2>
+
+<div id="gallery" class="carousel slide">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="images/gallery3.jpg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="images/gallery2.jpg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="images/gallery1.jpg" class="d-block w-100">
+</div>
+
+</div>
+
+<button class="carousel-control-prev" data-bs-target="#gallery" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" data-bs-target="#gallery" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="container my-5">
+
+<h2 class="text-center mb-4">Contact Me</h2>
+
+<div class="row justify-content-center">
+
+<div class="col-md-6">
+
+<div class="card shadow-lg border-0">
+
+<div class="card-body p-4">
+
+<h4 class="text-center mb-4">Get In Touch</h4>
+
+<form>
+
+<div class="mb-3">
+<label class="form-label"><i class="bi bi-person"></i> Full Name</label>
+<input type="text" class="form-control" placeholder="Enter your name">
+</div>
+
+<div class="mb-3">
+<label class="form-label"><i class="bi bi-envelope"></i> Email Address</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="mb-3">
+<label class="form-label"><i class="bi bi-gear"></i> Service</label>
+<select class="form-select">
+<option>Select Service</option>
+<option>Web Development</option>
+<option>Python Project</option>
+<option>Data Science</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label class="form-label"><i class="bi bi-chat-left-text"></i> Message</label>
+<textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
+</div>
+
+<div class="form-check mb-3">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">
+Subscribe for updates
+</label>
+</div>
+
+<div class="d-grid">
+<button class="btn btn-primary">
+<i class="bi bi-send"></i> Send Message
+</button>
+</div>
+
+</form>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="bg-dark text-white text-center p-4">
+
+<p>Follow Me</p>
+
+<i class="bi bi-github social-icon"></i>
+<i class="bi bi-linkedin social-icon"></i>
+<i class="bi bi-instagram social-icon"></i>
+
+<p class="mt-2">© 2026 My Portfolio</p>
+
+</footer>
+
+<!-- JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
